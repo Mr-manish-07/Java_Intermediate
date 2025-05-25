@@ -1,0 +1,21 @@
+1.  We required three things localHost/globalHost url, user,password
+2.  Load driver by using Class.forName("org.postgresql.Driver");
+3.  Exception handling is required whenever we connect with database.
+4.  So Class.forName can throws exception90() we need to handle it.
+5.  Exception reason : The specified class (e.g., "org.postgresql.Driver") is not found in the classpath.
+            try {
+                Class.forName("org.postgresql.Driver");
+            } catch (ClassNotFoundException e) {
+                System.out.println("JDBC Driver not found: " + e.getMessage());
+            }
+6.  We have 4 JDBC components :- DriverManager Class , Connection Interface , Statement
+            and prepared statement Interface , ResultSet Interface
+7.  In DriverManager Class we have .getConnection Method which takes three agr :-
+            localHost url , user , password
+8.  There is a exception called "SQLException" can comes while connecting to db so we need to handle it.
+9.  DriverManger.getConnection(localhost url , user,password) , connection established.
+10. Now it need to store somewhere so that Connection interface works here.
+11. Connection conn = Driver.getConnection(localhost,user,password);
+12. To execute SQL query we need to use Statement interface , CreateStatement is
+            not available to Statement, it is present to  Connection Class
+            so we can acces it using con.createStatement();
