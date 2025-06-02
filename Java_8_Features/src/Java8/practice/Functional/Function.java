@@ -2,7 +2,7 @@ package Java8.practice.Functional;
 
 //-------------------------------------Uses of Functional Interface---------------------
 //1. It should have 1 abstract method and can have multiple Static and default methods
-//2. To Invoke Lambdas Expression
+//2. It is used to Invoke Lambdas Expression
 //3. If parent having abstract method and child extending it,
 //          so it is also consider as abstract
 //          if we add another abstract method in child will throw error
