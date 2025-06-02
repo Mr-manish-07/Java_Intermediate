@@ -1,7 +1,7 @@
 1.  We required three things localHost/globalHost url, user,password
 2.  Load driver by using Class.forName("org.postgresql.Driver");
 3.  Exception handling is required whenever we connect with database.
-4.  So Class.forName can throws exception90() we need to handle it.
+4.  So Class.forName can throws exception() we need to handle it.
 5.  Exception reason : The specified class (e.g., "org.postgresql.Driver") is not found in the classpath.
             try {
                 Class.forName("org.postgresql.Driver");
@@ -18,4 +18,27 @@
 11. Connection conn = Driver.getConnection(localhost,user,password);
 12. To execute SQL query we need to use Statement interface , CreateStatement is
             not available to Statement, it is present to  Connection Class
-            so we can acces it using con.createStatement();
+            so we can access it using con.createStatement();
+13. Now we need to do CRUD operation of as we do in sql and stored in string  called "query".
+14. Now It's time to execute data from db so we will use "statement.executeQuery"
+15. statement.executeQuery(query) is used when we want to Fetch data from database
+16. But when we required to update data we will use statement.updateQuery(query);
+17. So statement.executeQuery() returns whole table from so it need to store somewhere so ResultSet works here.
+18. resultSet.next() tells is there any element if yes return true else false
+            (So while loop can be used for access all table).
+19. If db returns int value we can do "resultSet.getInt()" if String "resultSet.getString()"
+
+
+--------------------------------------QUERY FOR CRUD OPERATION--------------------------
+
+1.  UPDATING VALUE : "UPDATE students SET age = ? WHERE student_id = ?"
+2.  DELETING VALUE : "DELETE FROM students WHERE student_id = ?";
+3.  INSERT VALUE   : "INSERT INTO students(name,age,gender,email) VALUES(?,?,?,?)";
+
+
+
+
+
+
+
+

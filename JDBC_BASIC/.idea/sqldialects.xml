@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/Batch_Data_Processing.java" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/Connecting_DB.java" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/Delete_Data.java" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/Insert_Data.java" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/Main.java" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/Transection_Handling/Bank_Management.java" dialect="PostgreSQL" />
+  </component>
+</project>
